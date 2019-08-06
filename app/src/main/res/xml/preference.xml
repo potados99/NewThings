@@ -3,8 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
-            android:title="First Category"
-            app:iconSpaceReserved="false">
+            android:title="First Category">
 
         <CheckBoxPreference
             android:key="key_checkbox1"
@@ -13,11 +12,8 @@
 
     </PreferenceCategory>
 
-
-
     <PreferenceCategory
-            android:title="Second Category"
-            app:iconSpaceReserved="false">
+            android:title="Second Category">
 
         <PreferenceScreen
                 android:title="Go to GitHub"

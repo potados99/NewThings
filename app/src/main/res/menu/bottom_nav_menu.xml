@@ -2,12 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-            android:id="@+id/list_frag_dest"
+            android:id="@+id/action_setting_frag_dest_to_list_frag_dest2"
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/title_list"/>
 
     <item
-            android:id="@+id/setting_frag_dest"
+            android:id="@+id/action_list_frag_dest_to_setting_frag_dest"
             android:icon="@drawable/ic_dashboard_black_24dp"
             android:title="@string/title_setting"/>
 

@@ -6,10 +6,21 @@
 
     <fragment android:id="@+id/list_frag_dest"
               android:name="com.potados.newthings.ListFragment"
-              android:label="List Fragment"
-              tools:layout="@layout/list_fragment"/>
+              android:label="List"
+              tools:layout="@layout/list_fragment">
+        <action android:id="@+id/action_list_frag_dest_to_setting_frag_dest" app:destination="@id/setting_frag_dest"
+                app:enterAnim="@anim/slide_from_right" app:exitAnim="@anim/slide_to_left"
+                app:popEnterAnim="@anim/slide_from_left" app:popExitAnim="@anim/slide_to_right"
+        />
+    </fragment>
 
     <fragment android:id="@+id/setting_frag_dest"
               android:name="com.potados.newthings.SettingFragment"
-              android:label="Settings"/>
+              android:label="Settings">
+        <action android:id="@+id/action_setting_frag_dest_to_list_frag_dest2" app:destination="@id/list_frag_dest"
+                app:enterAnim="@anim/slide_from_left" app:exitAnim="@anim/slide_to_right"
+                app:popEnterAnim="@anim/slide_from_right" app:popExitAnim="@anim/slide_to_left"
+        />
+    </fragment>
+
 </navigation>

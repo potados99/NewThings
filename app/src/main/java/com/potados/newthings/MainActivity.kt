@@ -26,7 +26,13 @@ class MainActivity : AppCompatActivity() {
             .build()
 
         setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        navView.setOnNavigationItemSelectedListener {
+            navController.navigate(it.itemId)
+            true
+        }
+        navView.setOnNavigationItemReselectedListener {
+            //
+        }
     }
 
 }
